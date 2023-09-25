@@ -139,6 +139,7 @@ weather.index.year.value_counts().sort_index()
 weather["snwd"].plot()
 ```
 ![image](https://github.com/jidafan/weather-predict/assets/141703009/3aab9977-e2d7-43ec-aaed-a26b63462f74)
+
 **Creating a target column for our machine learning, by using shift on the tmax column**
 ```python
 weather["target"] = weather.shift(-1)["tmax"]
@@ -152,6 +153,7 @@ weather = weather.ffill()
 weather.corr(numeric_only=True)
 ```
 ![image](https://github.com/jidafan/weather-predict/assets/141703009/7355b28c-4a15-4307-a3d3-5ad59fc4dcd4)
+
 The matrix shows the correlation between the various different columns in the dataframe -1 being a strong negative correlation and 1 being a strong positive correlation
 
 **Initializing the ridge regression model and creating a list of of predictor columns**
@@ -186,6 +188,7 @@ def backtest(weather, model, predictors, start=3650, step = 90):
 We use a backtest function as we can't use future data to predict the past. The function takes in weather dataframe, ridge regression model, list of predictors, start dictates how much data we take in before we start predicting, and step indicates we predict every 90 days.
 
 The for loop in the function iterates from our defined start to the end of the dataframe. It creates a training set and test for our machine learning model, we convert our predictions into a dataframe and then combine them into a dataframe called combined.
+
 ![image](https://github.com/jidafan/weather-predict/assets/141703009/fd25f5dc-467c-4812-aa11-920fe9fe1f25)
 
 **Using our error metric to assess the accuracy of our predictions**
