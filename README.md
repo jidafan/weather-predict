@@ -65,7 +65,7 @@ The dataset used for this project was sourced from [NOAA](https://www.ncdc.noaa.
 
 The file contains 46 variables and 322988 observations
 
-## Data Exploration
+## Code Exploration
 **To view the full python code for this project, [click here](https://github.com/jidafan/weather-predict/blob/main/predict.py).**
 
 **Importing Relevant Libraries and Importing Data**
