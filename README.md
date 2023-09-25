@@ -1,3 +1,9 @@
-# weather-predict
+# Weather Prediction Python App
 
-Hi
+## Introduction
+
+## Weather Data Review
+
+## Data Exploration
+
+## Conclusion
