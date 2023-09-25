@@ -249,6 +249,7 @@ predictions = backtest(weather, rr, predictors)
 mean_absolute_error(predictions["actual"],predictions["prediction"])
 ```
 ![image](https://github.com/jidafan/weather-predict/assets/141703009/411066a3-01ed-4925-b2ee-c535f6fc1f58)
+
 The mean absolute error has decreased from last time, which means that our accuracy has increased
 
 
