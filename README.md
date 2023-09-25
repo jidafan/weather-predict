@@ -4,7 +4,7 @@
 ## Table of Contents
 * [Introduction](#introduction)
 * [Weather Data Review](#weather-data-review)
-* [Data Exploration](#data-exploration)
+* [Code Exploration](#data-exploration)
 ## Introduction
 Every person looks at the weather or makes note of the weather before going outside, what if we could predict the weather without having to look at the news or other such sources.
 
